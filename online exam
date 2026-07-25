@@ -1,0 +1,116 @@
+import java.util.Scanner;
+
+public class OnlineExam {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int score = 0;
+
+        System.out.println("==============================");
+        System.out.println("   JAVA DEVELOPER EXAM TEST");
+        System.out.println("==============================");
+
+        System.out.print("Enter Candidate Name: ");
+        String name = sc.nextLine();
+
+        System.out.println("\nCandidate: " + name);
+        System.out.println("Answer all questions\n");
+
+
+        // Question 1
+        System.out.println("1. Which concept hides data and controls access?");
+        System.out.println("A. Inheritance");
+        System.out.println("B. Encapsulation");
+        System.out.println("C. Polymorphism");
+        System.out.println("D. Abstraction");
+
+        System.out.print("Answer: ");
+        char ans = sc.next().charAt(0);
+
+        if(ans == 'B' || ans == 'b')
+            score++;
+
+
+        // Question 2
+        System.out.println("\n2. Which collection avoids duplicate values?");
+        System.out.println("A. ArrayList");
+        System.out.println("B. HashSet");
+        System.out.println("C. Stack");
+        System.out.println("D. Queue");
+
+        System.out.print("Answer: ");
+        ans = sc.next().charAt(0);
+
+        if(ans == 'B' || ans == 'b')
+            score++;
+
+
+        // Question 3
+        System.out.println("\n3. Which keyword creates an object?");
+        System.out.println("A. create");
+        System.out.println("B. object");
+        System.out.println("C. new");
+        System.out.println("D. class");
+
+        System.out.print("Answer: ");
+        ans = sc.next().charAt(0);
+
+        if(ans == 'C' || ans == 'c')
+            score++;
+
+
+        // Question 4
+        System.out.println("\n4. Same method with different behavior is called?");
+        System.out.println("A. Inheritance");
+        System.out.println("B. Polymorphism");
+        System.out.println("C. Package");
+        System.out.println("D. Variable");
+
+        System.out.print("Answer: ");
+        ans = sc.next().charAt(0);
+
+        if(ans == 'B' || ans == 'b')
+            score++;
+
+
+        // Question 5
+        System.out.println("\n5. Handling runtime errors is called?");
+        System.out.println("A. Loop");
+        System.out.println("B. Exception Handling");
+        System.out.println("C. Constructor");
+        System.out.println("D. Variable");
+
+        System.out.print("Answer: ");
+        ans = sc.next().charAt(0);
+
+        if(ans == 'B' || ans == 'b')
+            score++;
+
+
+        // Result
+        System.out.println("\n==============================");
+        System.out.println("           RESULT");
+        System.out.println("==============================");
+
+        System.out.println("Candidate Name : " + name);
+        System.out.println("Total Questions: 5");
+        System.out.println("Correct Answers: " + score);
+
+        double percentage = score * 20;
+
+        System.out.println("Percentage: " + percentage + "%");
+
+
+        if(score >= 3)
+            System.out.println("Status: PASS");
+        else
+            System.out.println("Status: FAIL");
+
+
+        System.out.println("==============================");
+
+        sc.close();
+    }
+}
