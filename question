@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class OnlineExam {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("==============================");
+        System.out.println("       ONLINE EXAM SYSTEM");
+        System.out.println("==============================");
+
+        System.out.print("Enter your name: ");
+        String name = sc.nextLine();
+
+        System.out.println("Welcome " + name);
+
+        System.out.println("\nQuestion 1:");
+        System.out.println("Which language is used to write Java programs?");
+        System.out.println("A. Java");
+        System.out.println("B. HTML");
+        System.out.println("C. CSS");
+        System.out.println("D. SQL");
+
+        System.out.print("Enter your answer: ");
+        String answer = sc.nextLine();
+
+        System.out.println("Your answer is: " + answer);
+
+        sc.close();
+    }
+}
